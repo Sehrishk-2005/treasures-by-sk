@@ -37,11 +37,20 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="xl" className="group">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              onClick={() => window.location.hash = "collections"}
+            >
               Explore Collection
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="elegant" size="xl">
+            <Button 
+              variant="elegant" 
+              size="xl"
+              onClick={() => window.location.hash = "custom-box"}
+            >
               Custom Orders
             </Button>
           </div>

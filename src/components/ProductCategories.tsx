@@ -70,7 +70,11 @@ const ProductCategories = () => {
                 <p className="text-white/90 mb-6 leading-relaxed">
                   {categories[0].description}
                 </p>
-                <Button variant="hero" className="group">
+                <Button 
+                  variant="hero" 
+                  className="group"
+                  onClick={() => window.location.hash = "collections"}
+                >
                   Shop Now
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -106,7 +110,12 @@ const ProductCategories = () => {
                     <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
                       {category.description}
                     </p>
-                    <Button variant="luxury" size="sm" className="self-start group">
+                    <Button 
+                      variant="luxury" 
+                      size="sm" 
+                      className="self-start group"
+                      onClick={() => window.location.hash = "collections"}
+                    >
                       Explore
                       <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
@@ -126,7 +135,11 @@ const ProductCategories = () => {
             <p className="text-white/90 mb-6 max-w-xl mx-auto">
               We specialize in custom orders and personalized gifts. Let us create something unique just for you.
             </p>
-            <Button variant="elegant" size="lg">
+            <Button 
+              variant="elegant" 
+              size="lg"
+              onClick={() => window.location.hash = "custom-box"}
+            >
               Request Custom Order
             </Button>
           </div>
