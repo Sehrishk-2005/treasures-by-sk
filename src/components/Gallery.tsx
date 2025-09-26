@@ -69,7 +69,7 @@ const Gallery = () => {
         </div>
 
         {/* Statistics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mb-12 sm:mb-16">
           <div className="text-center">
             <div className="text-3xl lg:text-4xl font-bold text-gradient mb-2">1000+</div>
             <div className="text-sm text-muted-foreground">Happy Customers</div>
@@ -161,7 +161,7 @@ const Gallery = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {[1, 2, 3, 4].map((item) => (
               <div 
                 key={item}

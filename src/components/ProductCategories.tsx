@@ -59,20 +59,20 @@ const ProductCategories = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
               </div>
               
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <div className="flex items-center mb-3">
-                  <Sparkles className="h-6 w-6 text-accent mr-2" />
-                  <span className="text-accent font-medium">{categories[0].subtitle}</span>
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 lg:p-8 text-white">
+                <div className="flex items-center mb-2 sm:mb-3">
+                  <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-accent mr-2" />
+                  <span className="text-accent font-medium text-sm sm:text-base">{categories[0].subtitle}</span>
                 </div>
-                <h3 className="text-2xl lg:text-3xl font-serif font-bold mb-3">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold mb-2 sm:mb-3">
                   {categories[0].title}
                 </h3>
-                <p className="text-white/90 mb-6 leading-relaxed">
+                <p className="text-white/90 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                   {categories[0].description}
                 </p>
                 <Button 
                   variant="hero" 
-                  className="group"
+                  className="group w-full sm:w-auto"
                   onClick={() => window.location.hash = "collections"}
                 >
                   Shop Now
@@ -95,7 +95,7 @@ const ProductCategories = () => {
                     />
                   </div>
                   
-                  <div className="p-8 sm:w-1/2 flex flex-col justify-center">
+                  <div className="p-4 sm:p-6 lg:p-8 sm:w-1/2 flex flex-col justify-center">
                     <div className="flex items-center mb-3">
                       {category.icon === Gift ? (
                         <Gift className="h-5 w-5 text-primary mr-2" />
@@ -113,7 +113,7 @@ const ProductCategories = () => {
                     <Button 
                       variant="luxury" 
                       size="sm" 
-                      className="self-start group"
+                      className="self-start group w-full sm:w-auto"
                       onClick={() => window.location.hash = "collections"}
                     >
                       Explore

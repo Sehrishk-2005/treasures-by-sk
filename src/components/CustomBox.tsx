@@ -142,36 +142,36 @@ const CustomBox = () => {
           {/* Available Items */}
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-serif font-bold mb-6">Choose Your Items</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               {availableItems.map((item) => (
                 <Card key={item.id} className="overflow-hidden shadow-luxury hover:shadow-glow transition-luxury">
-                  <div className="flex">
-                    <div className="w-24 h-24 flex-shrink-0">
+                  <div className="flex flex-col sm:flex-row">
+                    <div className="w-full sm:w-20 md:w-24 h-32 sm:h-20 md:h-24 flex-shrink-0">
                       <img
                         src={item.image}
                         alt={item.name}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="flex-1 p-4">
-                      <div className="flex justify-between items-start mb-2">
-                        <h3 className="font-semibold text-sm">{item.name}</h3>
-                        <Badge variant="outline" className="text-xs">
+                    <div className="flex-1 p-3 sm:p-4">
+                      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
+                        <h3 className="font-semibold text-sm md:text-base">{item.name}</h3>
+                        <Badge variant="outline" className="text-xs self-start">
                           PKR {item.price}
                         </Badge>
                       </div>
                       <p className="text-xs text-muted-foreground mb-3 line-clamp-2">
                         {item.description}
                       </p>
-                      <div className="flex items-center justify-between">
-                        <Badge variant="secondary" className="text-xs">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <Badge variant="secondary" className="text-xs self-start">
                           {item.category}
                         </Badge>
                         <Button
                           size="sm"
                           variant="luxury"
                           onClick={() => addItem(item)}
-                          className="h-7 px-3 text-xs"
+                          className="h-8 px-4 text-xs self-start sm:self-auto"
                         >
                           <Plus className="h-3 w-3 mr-1" />
                           Add
