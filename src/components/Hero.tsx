@@ -55,20 +55,20 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-8 text-xs sm:text-sm opacity-75">
+          <div className="mt-12 flex justify-center items-center space-x-8 text-sm opacity-75">
             <div className="text-center">
-              <div className="font-semibold text-sm">✨ Jewelry</div>
-              <div className="text-xs">Collection</div>
+              <div className="font-semibold">✨ Jewelry</div>
+              <div>Collection</div>
             </div>
-            <div className="hidden sm:block h-8 w-px bg-white/30"></div>
+            <div className="h-8 w-px bg-white/30"></div>
             <div className="text-center">
-              <div className="font-semibold text-sm">🎁 Custom</div>
-              <div className="text-xs">Gifts</div>
+              <div className="font-semibold">🎁 Custom</div>
+              <div>Gifts</div>
             </div>
-            <div className="hidden sm:block h-8 w-px bg-white/30"></div>
+            <div className="h-8 w-px bg-white/30"></div>
             <div className="text-center">
-              <div className="font-semibold text-sm">🔥 Trending</div>
-              <div className="text-xs">Items</div>
+              <div className="font-semibold">🔥 Trending</div>
+              <div>Items</div>
             </div>
           </div>
         </div>

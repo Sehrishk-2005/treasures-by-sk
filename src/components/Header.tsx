@@ -20,15 +20,15 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo with Brand */}
-          <div className="flex items-center space-x-2 sm:space-x-3">
+          <div className="flex items-center space-x-3">
             <img 
               src={treasuresLogo} 
               alt="Treasures by SK" 
-              className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover shadow-md"
+              className="h-12 w-12 rounded-full object-cover shadow-md"
             />
-            <div className="hidden xs:block">
-              <h1 className="text-sm sm:text-lg font-serif font-bold text-primary">Treasures by SK</h1>
-              <p className="text-xs text-muted-foreground hidden sm:block">Elegant Jewelry & Gifts</p>
+            <div className="hidden sm:block">
+              <h1 className="text-lg font-serif font-bold text-primary">Treasures by SK</h1>
+              <p className="text-xs text-muted-foreground">Elegant Jewelry & Gifts</p>
             </div>
           </div>
 
