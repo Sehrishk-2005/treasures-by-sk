@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Search, ShoppingBag, Heart, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import giftBoxIcon from "@/assets/gift-box-icon.png";
+import purpleGiftBox from "@/assets/purple-gift-box.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo with Brand */}
           <div className="flex items-center space-x-3">
             <img 
-              src={giftBoxIcon} 
+              src={purpleGiftBox} 
               alt="Treasures by SK Gift Box" 
               className="h-10 w-10 object-contain"
             />
