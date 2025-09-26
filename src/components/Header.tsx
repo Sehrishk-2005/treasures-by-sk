@@ -24,7 +24,8 @@ const Header = () => {
             <img 
               src={logoGiftBox} 
               alt="Treasures by SK Gift Box" 
-              className="h-10 w-10 object-contain"
+              className="h-12 w-12 object-contain"
+              style={{ filter: 'hue-rotate(270deg) saturate(1.5) brightness(0.8)' }}
             />
             <div className="hidden sm:block">
               <h1 className="text-lg font-serif font-bold text-primary">Treasures by SK</h1>
