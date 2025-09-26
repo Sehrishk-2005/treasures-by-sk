@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Search, ShoppingBag, Heart, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import treasuresLogo from "@/assets/treasures-logo.jpg";
+import giftBoxIcon from "@/assets/gift-box-icon.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,9 +22,9 @@ const Header = () => {
           {/* Logo with Brand */}
           <div className="flex items-center space-x-3">
             <img 
-              src={treasuresLogo} 
-              alt="Treasures by SK" 
-              className="h-12 w-12 rounded-full object-cover shadow-md"
+              src={giftBoxIcon} 
+              alt="Treasures by SK Gift Box" 
+              className="h-10 w-10 object-contain"
             />
             <div className="hidden sm:block">
               <h1 className="text-lg font-serif font-bold text-primary">Treasures by SK</h1>
