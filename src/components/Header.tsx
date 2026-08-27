@@ -19,17 +19,13 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b shadow-luxury">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo with Brand */}
-          <div className="flex items-center space-x-3">
+          {/* Logo */}
+          <div className="flex items-center">
             <img 
               src={logoEmblem} 
               alt="Treasures by SK Gift Box" 
-              className="h-11 w-auto object-contain"
+              className="h-14 w-auto object-contain"
             />
-            <div className="hidden sm:block">
-              <h1 className="text-lg font-serif font-bold text-primary">Treasures by SK</h1>
-              <p className="text-xs text-muted-foreground">Elegant Jewelry & Gifts</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
