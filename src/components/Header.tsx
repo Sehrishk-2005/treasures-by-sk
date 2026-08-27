@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src={logoEmblem} 
+              src={logoEmblem.url} 
               alt="Treasures by SK Gift Box" 
               className="h-14 w-auto object-contain"
             />
