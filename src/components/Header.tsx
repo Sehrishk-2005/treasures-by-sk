@@ -22,10 +22,9 @@ const Header = () => {
           {/* Logo with Brand */}
           <div className="flex items-center space-x-3">
             <img 
-              src={logoGiftBox} 
+              src={logoEmblem} 
               alt="Treasures by SK Gift Box" 
-              className="h-12 w-12 object-contain"
-              style={{ filter: 'hue-rotate(270deg) saturate(1.5) brightness(0.8)' }}
+              className="h-11 w-auto object-contain"
             />
             <div className="hidden sm:block">
               <h1 className="text-lg font-serif font-bold text-primary">Treasures by SK</h1>
